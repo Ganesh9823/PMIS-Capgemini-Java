@@ -94,3 +94,38 @@
 //         System.out.println(randomValueSupplier.get());
 //     }
 // }
+
+
+//supplier for otp generation
+// import java.util.function.*;
+// import java.util.*;
+
+// public class lambda {
+//     public static void main(String[] args) {
+//         Random random = new Random();        
+//         Supplier<String> otpGen = () -> {
+//             int number = 100000 + random.nextInt(900000);
+//             return String.valueOf(number);
+//         };        
+//         String userOtp = otpGen.get();
+//         System.out.println("Generated OTP: " + userOtp);
+//     }
+// }
+
+
+
+//stream
+import java.util.function.*;
+import java.util.stream.*;
+import java.util.*;
+public class lambda {
+    public static void main(String[] args) {
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+        List<Integer> result = numbers.stream()
+                .filter(num -> num % 2 == 0)
+                .map(num -> num * num)
+                .collect(Collectors.toList());
+        System.out.println(numbers);
+        System.out.println(result);
+    }
+}
