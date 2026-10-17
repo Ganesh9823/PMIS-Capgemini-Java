@@ -13,5 +13,10 @@ public class practice {
         for (int i = 1; i <= 5; i++) {
             System.out.println("This is line " + i);
         }
+        int j = 1;
+        while(j<=5){
+            System.out.println("This is line " + j);
+            j++;
+        }
     }
 }
