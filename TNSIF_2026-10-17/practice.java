@@ -10,6 +10,9 @@ public class practice {
             System.out.println("This is line " + j);
             j++;
         }
-        
+        while(j<=5){
+            System.out.println("This is line " + j);
+            j++;
+        }
     }
 }
