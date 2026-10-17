@@ -1,9 +1,16 @@
 
 class Literals{
-    public static void main(String a[])
+    public static void main(String arg[])
     {
-        int num1 = 10_00_00_000;
-        System.out.println(num1);
         
+        int a = 257;
+        byte k =(byte) a;
+
+        float f = 5.6f;
+        int t = (int) f;
+        System.out.println(a);
+        System.out.println(k);
+        System.out.println(f);
+        System.out.println(t);
     }
     }
