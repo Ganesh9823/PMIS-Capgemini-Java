@@ -20,6 +20,12 @@ class Student {
         this.age = age;
         this.rollNo = rollNo;
     }
+    Student(Student s1){          //copy constructor
+        this.name = s1.name;
+        this.age = s1.age;
+        this.rollNo = s1.rollNo;
+        System.out.println("This is a copy constructor");
+    }
     public void study(){
         System.out.println(this.name + " is studying");
         System.out.println("His/Her age is " + this.age);
@@ -40,6 +46,7 @@ public class oops {
         p2.write();
         Student s1 = new Student("John", 20, 101);
         Student s2 = new Student();
+        Student s3 = new Student(s1);
         s1.study();
     }
 }
