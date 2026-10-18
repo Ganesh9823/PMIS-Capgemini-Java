@@ -24,4 +24,4 @@ class ArithmeticOP{
         int remainder = a % b;
         System.out.println("Remainder: " + remainder);
     }
-}
+} 
