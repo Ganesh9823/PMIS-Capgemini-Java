@@ -29,31 +29,34 @@
 
 
 // every class extends object class
-class A extends Object{
-    A(){
-        super(); //here super is calling the constructor of the parent class Object. so we need to use super keyword to refer to parent class constructor.
-        System.out.println("A class constructor");
-    }
-    A(int n){
-        super();
-        System.out.println("A class constructor with int parameter : " + n);
-    }
-}
-class B extends A{
-    B(){
-        //super(7);//here even if we don't call super(); it'll still be executed
-        System.out.println("B class constructor");
-    }
-    B(int n){
+// class A extends Object{
+//     A(){
+//         super(); //here super is calling the constructor of the parent class Object. so we need to use super keyword to refer to parent class constructor.
+//         System.out.println("A class constructor");
+//     }
+//     A(int n){
+//         super();
+//         System.out.println("A class constructor with int parameter : " + n);
+//     }
+// }
+// class B extends A{
+//     B(){
+//         //super(7);//here even if we don't call super(); it'll still be executed
+//         System.out.println("B class constructor");
+//     }
+//     B(int n){
         
-        this(); //here this is calling the constructor of the same class B. so we need to use this keyword to refer to the constructor of the same class.
-        System.out.println("B class constructor with int parameter : " + n);
-    }
-}
-public class basicprograms {
+//         this(); //here this is calling the constructor of the same class B. so we need to use this keyword to refer to the constructor of the same class.
+//         System.out.println("B class constructor with int parameter : " + n);
+//     }
+// }
+// public class basicprograms {
 
-    public static void main(String[] args) {
-        B b = new B(10);
-        //B b2 = new B();
-    }
-}
+//     public static void main(String[] args) {
+//         B b = new B(10);
+//         //B b2 = new B();
+//     }
+// }
+
+
+

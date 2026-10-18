@@ -5,8 +5,11 @@ class appleMobiles{
     int price; //non-static variable
     String modelName;
 
-    public void show(){
+    public void show(){           //instance method
         System.out.println(brand + " " + modelName + " " + storage + "GB " + ram + "GB " + price);
+    }
+    public static void showBrand(){         //static method
+        System.out.println("Brand : " + brand);
     }
 }
 public class staticvar {
@@ -24,8 +27,12 @@ public class staticvar {
         aM2.modelName = "17 Pro Max";
 
         aM.show();
-        aM2.show();
+        aM2.show();           //we can't directly access the instance methods without creating objects
 
+
+        appleMobiles.showBrand();           //we can directly access the static methods without creating objects
         
     }
 }
+
+
