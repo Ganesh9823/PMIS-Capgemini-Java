@@ -25,6 +25,9 @@ class Student {
         this.age = s1.age;
         this.rollNo = s1.rollNo;
         System.out.println("This is a copy constructor");
+        System.out.println(this.name + " is studying");
+        System.out.println("His/Her age is " + this.age);
+        System.out.println("His/Her roll number is " + this.rollNo);
     }
     public void study(){
         System.out.println(this.name + " is studying");
