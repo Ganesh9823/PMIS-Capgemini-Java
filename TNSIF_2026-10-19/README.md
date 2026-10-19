@@ -64,4 +64,21 @@ mvn test : runs all the taste files inside the current folder
 
 Analogy:
 The j unit platform is the building , projector system and the ticket counter, and it can show you any movie. Jupiter is today's modern movie the only one you can write. Vintage is an old film or movie that runs on the same projector, the building doesn't care what movie plays as long as the matching engine (player) exists.
+
+
+Types of testing 
+Unit testing: testing an individual unit or a method 
+
+Integration testing: testing of multiple modules or components together, to taste if system behaves properly when wired together (the goal is not to test end to end user behaviour, it is just if multiple modules or system wired together, does internal behaviour. 
+Use case 1 - service>repository>database
+Wired multiple modules of 1 component
+1) you invoke a method into the service layer 
+2) verify that dependency injection works correctly 
+3) the flow should reach the database layer 
+4) your test can assert the data was persisted properly into the database 
+Service A>Published to Kafka
+Validate if the message is successfully published to the Kafka topic
+
+Functional testing:
+End to end Testing of a feature or a business functionality, verifying if it works as expected
 -->
