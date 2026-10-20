@@ -47,8 +47,8 @@ The manager byes it sets of the kitchen cooks and tests then says it failed the 
 junit-demo/
 ├── pom.xml                   ← the shopping list / settings
 └── src/
-├── main/java/            ← your real code (Calculator.java)
-└── test/java/            ← your tests (CalculatorTest.java)
+    ├── main/java/            ← your real code (Calculator.java)
+    └── test/java/            ← your tests (CalculatorTest.java)
 
 
 mvn -v
