@@ -1,10 +1,15 @@
 class Student {
     String Name;
+    static String Headmaster = "Raja";
+    //Headmaster = "Ram";//inside a class you can only define a static variable once
     static String School;
     static void display() {
         System.out.println(School); // Works
         // System.out.println(name); // Error as static method can't access non static variables 
     }
+    // static void display2() {
+    //     // System.out.println(this.name); // Error//cannot use this inside a static method
+    // }
 }
 
 
@@ -39,6 +44,7 @@ public class Static {
     }
     public static void main(String[] args){
         Student.School = "BHS";
+        Student.Headmaster = "Ram";//this is valid 
         //Student.Name = "Raj"; //This gives an error as its not a static variable
         Student st = new Student();
         Student st2 = new Student();
@@ -54,3 +60,12 @@ public class Static {
         objj.display();
     }
 }
+
+// class School {
+//     static String Headmaster = "Raja";
+
+//     public static void main(String[] args) {
+//         Headmaster = "Ram"; // ✅ Valid
+//         System.out.println(Headmaster);
+//     }
+// }
