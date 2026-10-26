@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 **/target/
 .idea/
 *.iml
+=======
+*.class
+.vscode/
+bin/
+>>>>>>> origin/main
