@@ -16,7 +16,7 @@ public class dateTime {
         
         LocalDate yesterday = now.minusDays(1);
         System.out.println(yesterday);
-        LocalDate pasDate = now.minusMonths(100);//prints 100 months before today's date
-        System.out.println(pasDate);
+        LocalDate pastDate = now.minusMonths(100);//prints 100 months before today's date
+        System.out.println(pastDate);
     }
 }
