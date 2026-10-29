@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-**/target/
-.idea/
-*.iml
-=======
+
 *.class
 .vscode/
 bin/
