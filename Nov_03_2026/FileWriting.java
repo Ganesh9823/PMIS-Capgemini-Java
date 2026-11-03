@@ -7,7 +7,7 @@ public class FileWriting {
     public static void main(String[] args) {
 
         try {
-            FileWriter writer = new FileWriter("student.txt");
+            FileWriter writer = new FileWriter("student.txt", true);
 
             writer.write("Name: Ganesh\n");
             writer.write("Course: Java Programming\n");
