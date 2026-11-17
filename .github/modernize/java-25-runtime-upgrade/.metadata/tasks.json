@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Tasks for the Java 25 LTS runtime and Maven build upgrade.",
+  "tasks": [
+    {
+      "type": "upgrade",
+      "id": "001-upgrade-java-runtime-to-25",
+      "description": "Upgrade the Java runtime and affected Maven build/toolchain configuration to Java 25 LTS. Addresses assessment issue: Java Version is not the latest LTS (azure-java-version-02000; maven_demo/junit-jupiter/pom.xml:17-18).",
+      "reason": "The assessment identifies a Java LTS upgrade finding, and the affected Maven module still declares Java 17 as its compiler source and target.",
+      "requirements": "Target Java 25 LTS. Update only the runtime, Maven build, and toolchain configuration needed for the affected module to compile, test, and package on Java 25. Preserve application behavior and keep unrelated frameworks, dependencies, application logic, cloud-readiness changes, and deployment out of scope. Validate the affected Maven module using JDK 25 and its existing tests.",
+      "successCriteria": {
+        "passBuild": "true",
+        "generateNewUnitTests": "false",
+        "passUnitTests": "true"
+      }
+    }
+  ],
+  "metadata": {
+    "planName": "java-25-runtime-upgrade",
+    "projectName": "java capgemini",
+    "language": "java",
+    "createdAt": "2026-10-23T20:13:40.947+05:30",
+    "version": "1.0"
+  }
+}
